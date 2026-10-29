@@ -1,0 +1,56 @@
+# Local environments and secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Python caches, packaging, tools, and editors
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.ipynb_checkpoints/
+build/
+dist/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+.DS_Store
+
+# Data: retain documentation and deliberately small manifests/metadata
+data/*
+!data/README.md
+!data/manifests/
+!data/metadata/
+
+# Model weights anywhere
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.weights
+
+# All run output is ignored unless explicitly retained as small records
+experiments/*
+!experiments/README.md
+!experiments/*/
+experiments/*/*
+!experiments/*/config.yaml
+!experiments/*/config.json
+!experiments/*/manifest.json
+!experiments/*/metadata.json
+!experiments/*/summary.md
+!experiments/*/summary.json
+
+# Guard against misplaced generated output
+predictions/
+checkpoints/
+weights/
+outputs/
+logs/
